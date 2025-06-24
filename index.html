@@ -1,11 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Utilinx – Todo lo útil, en un solo link</title>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <title>Utilinx - Tu Recursero Digital</title>
   <style>
     :root {
       --bg: #0e0e0e;
@@ -13,204 +11,116 @@
       --accent: #ff2fd0;
       --text: #e1e1e1;
     }
+
     body {
       margin: 0;
-      font-family: 'JetBrains Mono', monospace;
-      background-color: var(--bg);
+      background: var(--bg);
       color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
     }
-    header {
-      background-color: #111;
-      padding: 1rem 2rem;
-      border-bottom: 2px solid var(--primary);
-    }
-    header h1 {
+
+    h1 {
       color: var(--primary);
-      margin: 0;
-    }
-    nav a {
-      color: var(--accent);
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      padding: 3rem 2rem;
-      text-align: center;
-    }
-    .hero h2 {
-      color: var(--accent);
       font-size: 2rem;
     }
+
+    h2 {
+      color: var(--accent);
+      margin-top: 2rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
     }
+
     .card {
-      background: #1b1b1b;
-      border: 1px solid var(--primary);
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
       padding: 1rem;
-      border-radius: 0.5rem;
-      transition: transform 0.2s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease;
     }
+
     .card:hover {
       transform: scale(1.03);
-      border-color: var(--accent);
     }
-    .card a {
+
+    .card h3 {
+      margin-top: 0;
       color: var(--primary);
-      text-decoration: none;
-      display: block;
-      font-weight: bold;
     }
+
     footer {
+      margin-top: 4rem;
       text-align: center;
-      padding: 2rem;
       font-size: 0.9rem;
-      color: #666;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Utilinx</h1>
-    <nav>
-      <a href="#streaming">Streaming</a>
-      <a href="#ia">IA Gratis</a>
-      <a href="#software">Software Libre</a>
-      <a href="#tramites">Trámites</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Todo lo útil, en un solo link</h2>
-    <p>Recursos legales, herramientas digitales y datos callejeros para sobrevivir con dignidad en el caos digital.</p>
-  </section>
-
-  <section class="grid">
-<section id="ia" style="padding: 2rem">
-  <h2 style="color: var(--accent)">🧠 Herramientas de IA Gratuitas (Y Cuáles Realmente Valen la Pena)</h2>
-  <p style="max-width: 800px">
-    No todo lo que dice “IA” vale la pena. Muchas te piden la tarjeta apenas entrás y otras son puro humo. 
-    En esta sección vas a encontrar herramientas que realmente sirven, con comparativas claras entre lo gratis y lo de pago, 
-    pa que sepas en qué gastar tiempo y en qué no.
+  <h1>📡 Utilinx</h1>
+  <p>
+    Un recursero digital que recopila lo útil, lo gratuito y lo legal. 
+    Hecho para gente que necesita resolver, descubrir y ahorrar tiempo (y plata). 
+    Acá encontrai herramientas, comparativas y recursos ordenados por categoría.
   </p>
 
-  <!-- IMAGEN -->
-  <div class="card">
-    <h3>🔥 Leonardo.Ai</h3>
-    <ul>
-      <li><strong>Gratis:</strong> 150 tokens diarios. Excelente calidad de imagen. Modelos propios con estilo.</li>
-      <li><strong>Premium:</strong> Más tokens, prioridad y modelos exclusivos.</li>
-      <li><strong>Mi opinión:</strong> Ideal si querí hacer imágenes de portada, arte conceptual o estilo cyberpunk. Recomendado.</li>
-      <li><strong>Link:</strong> <a href="https://app.leonardo.ai" target="_blank">app.leonardo.ai</a></li>
-    </ul>
-  </div>
+  <h2>🔍 ¿Qué querís encontrar?</h2>
+  <div class="grid">
 
-  <div class="card">
-    <h3>🎨 PlaygroundAI</h3>
-    <ul>
-      <li><strong>Gratis:</strong> 100 imágenes por día. Usa Stable Diffusion y DALL·E 2.</li>
-      <li><strong>Premium:</strong> Más rápido, sin límites, sin marca de agua.</li>
-      <li><strong>Mi opinión:</strong> Buen sitio pa experimentar estilos. No necesita cuenta Google ni tarjeta.</li>
-      <li><strong>Link:</strong> <a href="https://playgroundai.com" target="_blank">playgroundai.com</a></li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>🖌️ Mage.Space</h3>
-    <ul>
-      <li><strong>Gratis:</strong> Imágenes sin límite usando SDXL. No requiere cuenta.</li>
-      <li><strong>Premium:</strong> Mayor velocidad y calidad.</li>
-      <li><strong>Mi opinión:</strong> Pa practicar prompts y jugar sin restricciones, es top.</li>
-      <li><strong>Link:</strong> <a href="https://www.mage.space/" target="_blank">mage.space</a></li>
-    </ul>
-  </div>
-
-  <!-- TEXTO -->
-  <div class="card">
-    <h3>💬 Poe.com</h3>
-    <ul>
-      <li><strong>Gratis:</strong> Acceso a varios modelos de texto como GPT-3.5, Claude y Mistral.</li>
-      <li><strong>Premium:</strong> GPT-4 y Claude 3 ilimitado.</li>
-      <li><strong>Mi opinión:</strong> Sirve pa comparar distintas respuestas de IA en una sola app. Bien completo.</li>
-      <li><strong>Link:</strong> <a href="https://poe.com" target="_blank">poe.com</a></li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>🔎 You.com (Buscador IA)</h3>
-    <ul>
-      <li><strong>Gratis:</strong> Buscador con IA que resume, responde y genera texto.</li>
-      <li><strong>Premium:</strong> Mejor procesamiento, GPT-4 integrado.</li>
-      <li><strong>Mi opinión:</strong> Pa tareas, resúmenes o buscar rápido sin abrir 30 pestañas, salva.</li>
-      <li><strong>Link:</strong> <a href="https://you.com" target="_blank">you.com</a></li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h3>📄 Mistral (Texto open-source)</h3>
-    <ul>
-      <li><strong>Gratis:</strong> Modelo tipo ChatGPT pero 100% libre. Rápido y preciso.</li>
-      <li><strong>Premium:</strong> No tiene, es libre. Algunos portales sí limitan el acceso.</li>
-      <li><strong>Mi opinión:</strong> Buena opción si buscas independencia y cero censura comercial.</li>
-      <li><strong>Link:</strong> <a href="https://huggingface.co/chat" target="_blank">huggingface.co/chat</a></li>
-    </ul>
-  </div>
-
-  <!-- AUDIO -->
-  <div class="card">
-    <h3>🎤 ElevenLabs (Voz realista)</h3>
-    <ul>
-      <li><strong>Gratis:</strong> 10.000 caracteres al mes para convertir texto a voz.</li>
-      <li><strong>Premium:</strong> Más caracteres, clones de voz y uso comercial.</li>
-      <li><strong>Mi opinión:</strong> Si querís voces que no suenen a robot, esta es top. La calidad es ridícula.</li>
-      <li><strong>Link:</strong> <a href="https://elevenlabs.io" target="_blank">elevenlabs.io</a></li>
-    </ul>
-  </div>
-
-  <!-- VIDEO -->
-  <div class="card">
-    <h3>🎬 Runway ML</h3>
-    <ul>
-      <li><strong>Gratis:</strong> Algunos modelos de texto a video, recorte de objetos, edición IA.</li>
-      <li><strong>Premium:</strong> Generación de video sin marca de agua y funciones avanzadas.</li>
-      <li><strong>Mi opinión:</strong> Si querís editar o probar IA en video sin tener tarjeta, te sirve pa testear.</li>
-      <li><strong>Link:</strong> <a href="https://runwayml.com" target="_blank">runwayml.com</a></li>
-    </ul>
-  </div>
-</section>
     <div class="card">
-      <a href="#streaming">¿Está en Netflix?</a>
-      <p>Buscador + links legales para ver pelis/series en streaming.</p>
+      <h3>🧠 Herramientas de IA</h3>
+      <p>Comparativa entre IAs gratuitas y de pago. Lo que ofrecen, lo que no, y cuál sirve realmente.</p>
+      <a href="ia.html">→ Ver herramientas</a>
     </div>
-    <div class="card">
-      <a href="#ia">Herramientas de IA</a>
-      <p>Directorio actualizado de IAs gratuitas: texto, imagen, voz y más.</p>
-    </div>
-    <div class="card">
-      <a href="#biblioteca">Biblioteca Libre</a>
-      <p>Libros y archivos legales para descargar sin culpa.</p>
-    </div>
-    <div class="card">
-      <a href="#software">Alternativas Open Source</a>
-      <p>Software gratuito para reemplazar programas pagos.</p>
-    </div>
-    <div class="card">
-      <a href="#abandonware">Juegos Libres</a>
-      <p>Clásicos del PC listos para revivir legalmente.</p>
-    </div>
-    <div class="card">
-      <a href="#tramites">Trámites CHL</a>
-      <p>Cómo moverte en el sistema sin perder tiempo ni paciencia.</p>
-    </div>
-  </section>
 
- <footer>
-  <p>Hecho con bits y aburrimiento. Inspirado por la necesidad. Alimentado por el caos.</p>
- </footer>
+    <div class="card">
+      <h3>🎬 ¿Dónde Ver Legalmente?</h3>
+      <p>Buscadores, alternativas legales, plataformas gratuitas y cómo saber qué está en dónde.</p>
+      <a href="#streaming">→ Ver opciones</a>
+    </div>
+
+    <div class="card">
+      <h3>🕹️ Abandonware Legal</h3>
+      <p>Juegos antiguos que hoy se pueden jugar sin piratear. Nostalgia libre de culpas.</p>
+      <a href="#abandonware">→ Ir a la lista</a>
+    </div>
+
+    <div class="card">
+      <h3>📚 Biblioteca Abierta</h3>
+      <p>Repositorios de libros, papers y material educativo disponible de forma libre.</p>
+      <a href="#libros">→ Explorar</a>
+    </div>
+
+    <div class="card">
+      <h3>🔐 Comparativa de VPNs</h3>
+      <p>Qué VPN conviene según el uso: streaming, privacidad, estudios o contenido bloqueado.</p>
+      <a href="#vpn">→ Ver comparativa</a>
+    </div>
+
+    <div class="card">
+      <h3>🛠️ Alternativas Open Source</h3>
+      <p>Programas gratuitos que reemplazan a los clásicos de pago (Photoshop, Office, etc.).</p>
+      <a href="#software">→ Revisar</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Hecho con bits y aburrimiento. Inspirado por la necesidad. Alimentado por el caos.</p>
+  </footer>
 
 </body>
 </html>
