@@ -17,22 +17,47 @@
       background: var(--bg);
       color: var(--text);
       font-family: 'Segoe UI', sans-serif;
-      padding: 2rem;
+      padding: 4rem 2rem 2rem 2rem; /* top padding para menú */
     }
 
-    h1 {
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #111;
+      border-bottom: 1px solid #333;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
       color: var(--primary);
-      font-size: 2rem;
+      cursor: default;
     }
 
-    h2 {
-      color: var(--accent);
-      margin-top: 2rem;
-    }
-
-    a {
+    nav a {
       color: var(--accent);
       text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    h1.page-title {
+      color: var(--primary);
+      font-size: 2rem;
+      margin-top: 0;
     }
 
     .grid {
@@ -70,52 +95,67 @@
 </head>
 <body>
 
-  <h1>📡 Utilinx</h1>
-  <p>
-    Un recursero digital que recopila lo útil, lo gratuito y lo legal. 
-    Hecho para gente que necesita resolver, descubrir y ahorrar tiempo (y plata). 
-    Acá encontrai herramientas, comparativas y recursos ordenados por categoría.
-  </p>
+  <header>
+    <h1>Utilinx</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="ia.html">Herramientas IA</a>
+      <a href="#streaming">Streaming Legal</a>
+      <a href="#abandonware">Abandonware</a>
+      <a href="#software">Software</a>
+      <a href="#vpn">VPN</a>
+    </nav>
+  </header>
 
-  <h2>🔍 ¿Qué quieres encontrar?</h2>
-  <div class="grid">
+  <main>
+    <h1 class="page-title">📡 Utilinx</h1>
+    <p>
+      Un recursero digital que recopila lo útil, lo gratuito y lo legal. 
+      Hecho para gente que necesita resolver, descubrir y ahorrar tiempo (y plata). 
+      Acá encontrai herramientas, comparativas y recursos ordenados por categoría.
+    </p>
 
-    <div class="card">
-      <h3>🧠 Herramientas de IA</h3>
-      <p>Comparativa entre IAs gratuitas y de pago. Lo que ofrecen, lo que no, y cuál sirve realmente.</p>
+    <h2>🔍 ¿Qué querís encontrar?</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>🧠 Herramientas de IA</h3>
+        <p>Comparativa entre IAs gratuitas y de pago. Lo que ofrecen, lo que no, y cuál sirve realmente.</p>
+        <a href="ia.html">→ Ver herramientas</a>
+      </div>
+
+      <div class="card">
+        <h3>🎬 ¿Dónde Ver Legalmente?</h3>
+        <p>Buscadores, alternativas legales, plataformas gratuitas y cómo saber qué está en dónde.</p>
+        <a href="#streaming">→ Ver opciones</a>
+      </div>
+
+      <div class="card">
+        <h3>🕹️ Abandonware Legal</h3>
+        <p>Juegos antiguos que hoy se pueden jugar sin piratear. Nostalgia libre de culpas.</p>
+        <a href="#abandonware">→ Ir a la lista</a>
+      </div>
+
+      <div class="card">
+        <h3>📚 Biblioteca Abierta</h3>
+        <p>Repositorios de libros, papers y material educativo disponible de forma libre.</p>
+        <a href="#libros">→ Explorar</a>
+      </div>
+
+      <div class="card">
+        <h3>🔐 Comparativa de VPNs</h3>
+        <p>Qué VPN conviene según el uso: streaming, privacidad, estudios o contenido bloqueado.</p>
+        <a href="#vpn">→ Ver comparativa</a>
+      </div>
+
+      <div class="card">
+        <h3>🛠️ Alternativas Open Source</h3>
+        <p>Programas gratuitos que reemplazan a los clásicos de pago (Photoshop, Office, etc.).</p>
+        <a href="#software">→ Revisar</a>
+      </div>
+
     </div>
-
-    <div class="card">
-      <h3>🎬 ¿Dónde Ver Legalmente?</h3>
-      <p>Buscadores, alternativas legales, plataformas gratuitas y cómo saber qué está en dónde.</p>
-      <a href="#streaming">→ Ver opciones</a>
-    </div>
-
-    <div class="card">
-      <h3>🕹️ Abandonware Legal</h3>
-      <p>Juegos antiguos que hoy se pueden jugar sin piratear. Nostalgia libre de culpas.</p>
-      <a href="#abandonware">→ Ir a la lista</a>
-    </div>
-
-    <div class="card">
-      <h3>📚 Biblioteca Abierta</h3>
-      <p>Repositorios de libros, papers y material educativo disponible de forma libre.</p>
-      <a href="#libros">→ Explorar</a>
-    </div>
-
-    <div class="card">
-      <h3>🔐 Comparativa de VPNs</h3>
-      <p>Qué VPN conviene según el uso: streaming, privacidad, estudios o contenido bloqueado.</p>
-      <a href="#vpn">→ Ver comparativa</a>
-    </div>
-
-    <div class="card">
-      <h3>🛠️ Alternativas Open Source</h3>
-      <p>Programas gratuitos que reemplazan a los clásicos de pago (Photoshop, Office, etc.).</p>
-      <a href="#software">→ Revisar</a>
-    </div>
-
-  </div>
+  </main>
 
   <footer>
     <p>Hecho con bits y aburrimiento. Inspirado por la necesidad. Alimentado por el caos.</p>
