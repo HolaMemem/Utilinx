@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Utilinx - Alternativas Open Source</title>
+  <style>
+    :root {
+      --bg: #0e0e0e;
+      --primary: #00ffae;
+      --accent: #ff2fd0;
+      --text: #e1e1e1;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 4rem 2rem 2rem 2rem;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #111;
+      border-bottom: 1px solid #333;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: var(--primary);
+      cursor: default;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    h1, h2 {
+      color: var(--primary);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Utilinx</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="ia.html">Herramientas IA</a>
+      <a href="open.html">Open Source</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>🛠️ Alternativas Open Source</h1>
+    <p>¿No querís pagar por Office o Photoshop? No tenís que piratear. Acá encontrai opciones libres, legales y potentes que hacen la pega igual de bien (a veces hasta mejor).</p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>🖼️ GIMP vs. Photoshop</h3>
+        <p><strong>GIMP</strong> es un editor de imágenes potente, gratuito y open source. Ideal pa edición de fotos, diseño web y arte digital.</p>
+        <p><strong>Lo bueno:</strong> no requiere suscripción, tiene plugins, y podís usarlo en cualquier sistema.</p>
+        <a href="https://www.gimp.org/" target="_blank">→ Visitar gimp.org</a>
+      </div>
+
+      <div class="card">
+        <h3>📊 LibreOffice vs. Microsoft Office</h3>
+        <p><strong>LibreOffice</strong> es una suite ofimática completa que reemplaza Word, Excel y PowerPoint. Compatible con los formatos de Microsoft.</p>
+        <p><strong>Lo bueno:</strong> liviano, sin licencias, actualizaciones constantes, ideal pa estudiantes o trabajos formales.</p>
+        <a href="https://www.libreoffice.org/" target="_blank">→ Visitar libreoffice.org</a>
+      </div>
+
+      <div class="card">
+        <h3>📐 FreeCAD vs. AutoCAD</h3>
+        <p><strong>FreeCAD</strong> permite diseñar objetos 3D paramétricos sin pagar una fortuna. Sirve pa arquitectura, ingeniería y diseño mecánico.</p>
+        <p><strong>Lo bueno:</strong> multiplataforma, compatible con formatos estándar, y con comunidad activa.</p>
+        <a href="https://www.freecad.org/" target="_blank">→ Visitar freecad.org</a>
+      </div>
+
+      <div class="card">
+        <h3>🎞️ Kdenlive vs. Premiere Pro</h3>
+        <p><strong>Kdenlive</strong> es un editor de video open source, potente y estable. Corre fluido en PCs de gama media.</p>
+        <p><strong>Lo bueno:</strong> admite múltiples pistas, efectos, transiciones y render rápido.</p>
+        <a href="https://kdenlive.org/" target="_blank">→ Visitar kdenlive.org</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Hecho con bits y aburrimiento. Inspirado por la necesidad. Alimentado por el caos.</p>
+  </footer>
+
+</body>
+</html>
