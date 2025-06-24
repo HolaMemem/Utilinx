@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Utilinx – Todo lo útil, en un solo link</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0e0e0e;
+      --primary: #00ffae;
+      --accent: #ff2fd0;
+      --text: #e1e1e1;
+    }
+    body {
+      margin: 0;
+      font-family: 'JetBrains Mono', monospace;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background-color: #111;
+      padding: 1rem 2rem;
+      border-bottom: 2px solid var(--primary);
+    }
+    header h1 {
+      color: var(--primary);
+      margin: 0;
+    }
+    nav a {
+      color: var(--accent);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      color: var(--accent);
+      font-size: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .card {
+      background: #1b1b1b;
+      border: 1px solid var(--primary);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      border-color: var(--accent);
+    }
+    .card a {
+      color: var(--primary);
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Utilinx</h1>
+    <nav>
+      <a href="#streaming">Streaming</a>
+      <a href="#ia">IA Gratis</a>
+      <a href="#software">Software Libre</a>
+      <a href="#tramites">Trámites</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Todo lo útil, en un solo link</h2>
+    <p>Recursos legales, herramientas digitales y datos callejeros para sobrevivir con dignidad en el caos digital.</p>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <a href="#streaming">¿Está en Netflix?</a>
+      <p>Buscador + links legales para ver pelis/series en streaming.</p>
+    </div>
+    <div class="card">
+      <a href="#ia">Herramientas de IA</a>
+      <p>Directorio actualizado de IAs gratuitas: texto, imagen, voz y más.</p>
+    </div>
+    <div class="card">
+      <a href="#biblioteca">Biblioteca Libre</a>
+      <p>Libros y archivos legales para descargar sin culpa.</p>
+    </div>
+    <div class="card">
+      <a href="#software">Alternativas Open Source</a>
+      <p>Software gratuito para reemplazar programas pagos.</p>
+    </div>
+    <div class="card">
+      <a href="#abandonware">Juegos Libres</a>
+      <p>Clásicos del PC listos para revivir legalmente.</p>
+    </div>
+    <div class="card">
+      <a href="#tramites">Trámites CHL</a>
+      <p>Cómo moverte en el sistema sin perder tiempo ni paciencia.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Hecho con bits y cariño por Milo. Inspirado por la necesidad. Alimentado por el caos.</p>
+  </footer>
+</body>
+</html>
